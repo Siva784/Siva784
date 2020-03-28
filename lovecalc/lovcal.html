@@ -1,0 +1,72 @@
+<html>
+<head>
+
+<style>
+body{
+align:center;
+background-image:url('heart.png');
+background-repeat:no-repeat;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+p{
+color: #a3a375;
+font-size:78px;
+/*text-align:center;*/
+padding-left:450px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+table{
+margin-left:auto;
+margin-right:auto;
+width:500px;
+}
+
+input[type=submit]:hover {
+  background-color: #cccccc;
+}
+</style>
+</head>
+<body>
+<table>
+<tr><th>LOVE CALCULATOR</th></tr>
+<tr><td><input type="text"  placeholder='boyname' id='bname'></td></tr>
+<tr><td><input type="text"  placeholder='girlname' id='gname'></td></tr>
+<tr><td><input type="submit"  value='calculate' onclick='setTimeout(myFunction, 500)'></td></tr>
+</table>
+
+<p id='demo'></p>
+<script>
+
+function myFunction() {
+	var bname=document.getElementById('bname').value;
+	var gname=document.getElementById('gname').value;
+	if(bname=="" ||gname=="")
+	{
+	alert('enter name');
+	}
+	else{
+	
+  var x = Math.floor((Math.random() * 10) + 80);
+  document.getElementById("demo").innerHTML = x +"%";
+}}
+</script>
+</body>
+</html>
